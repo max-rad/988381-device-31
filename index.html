@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-    <header class="header">
+    <header class="page-header">
       <nav class="navigation">
         <a class="header-logo">
           <img src="img/logo_header.svg" width="163" height="35" alt="Логотип Девайс">
@@ -24,16 +24,16 @@
           <button type="submit">найти</button>
         </form>
 
-        <ul class="user-navigation">
+        <ul class="user-navigation reset-list">
           <li><a href="blank.html">Войти</a></li>
           <li><a href="blank.html">Сравнить</a></li>
           <li><a href="blank.html">Корзина</a></li>
         </ul>
 
-        <ul class="site-navigation">
+        <ul class="site-navigation reset-list">
           <li>
             <a href="catalog.html">Каталог товаров</a>
-            <ul class="site-navigation-dropdown">
+            <ul class="site-navigation-dropdown reset-list">
               <li><a href="blank.html">Виртуальная реальность</a></li>
               <li><a href="blank.html">Фитнес-браслеты</a></li>
               <li><a href="blank.html">Квадрокоптер</a></li>
@@ -49,13 +49,13 @@
       </nav>
     </header>
 
-    <main class="container">
+    <main class="main">
       <h1>Интернет-магазин гаджетов Девайс</h1>
 
       <section class="slider">
         <h2>Подборка товаров</h2>
 
-        <ul class="slider-list">
+        <ul class="slider-list reset-list">
           <li class="slider-item">
             <div class="slider-number">01</div>
             <img src="img/slides/slide_selfie_stick.jpg" width="384" height="486" alt="Монопод для селфи черного цвета с триподом">
@@ -64,18 +64,7 @@
               Самая длинная палка для селфи доступна в нашем магазине.<br>
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
             </p>
-            <a class="button" href="blank.html">Подробнее</a>
-            <ul class="slider-buttons">
-              <li class="slider-button slider-button-1">
-                <button type="button">button1</button>
-              </li>
-              <li class="slider-button slider-button-2">
-                <button type="button">button2</button>
-              </li>
-              <li class="slider-button slider-button-3">
-                <button type="button">button3</button>
-              </li>
-            </ul>
+            <a class="button button-decor block-button" href="blank.html">Подробнее</a>
             <dl class="slider-specification">
               <dt>8,5 м</dt>
               <dd>Длина палки</dd>
@@ -93,18 +82,7 @@
               Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
               не пропускать занятия и соблюдать диету.
             </p>
-            <a class="button" href="blank.html">Подробнее</a>
-            <ul class="slider-buttons">
-              <li class="slider-button slider-button-1">
-                <button type="button">button1</button>
-              </li>
-              <li class="slider-button slider-button-2">
-                <button type="button">button2</button>
-              </li>
-              <li class="slider-button slider-button-3">
-                <button type="button">button3</button>
-              </li>
-            </ul>
+            <a class="button button-decor block-button" href="blank.html">Подробнее</a>
             <dl class="slider-specification">
               <dt>48 часов</dt>
               <dd>Без подзарядки</dd>
@@ -118,18 +96,7 @@
               Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
               мощным лазером, замаскированным под стандартную камеру.
             </p>
-            <a class="button" href="blank.html">Подробнее</a>
-            <ul class="slider-buttons">
-              <li class="slider-button slider-button-1">
-                <button type="button">button1</button>
-              </li>
-              <li class="slider-button slider-button-2">
-                <button type="button">button2</button>
-              </li>
-              <li class="slider-button slider-button-3">
-                <button type="button">button3</button>
-              </li>
-            </ul>
+            <a class="button button-decor block-button" href="blank.html">Подробнее</a>
             <dl class="slider-specification">
               <dt>800 м</dt>
               <dd>Дальность полета</dd>
@@ -138,11 +105,23 @@
             </dl>
           </li>
         </ul>
+
+				<ul class="slider-buttons reset-list">
+					<li class="slider-button">
+						<button type="button">button1</button>
+					</li>
+					<li class="slider-button">
+						<button type="button">button2</button>
+					</li>
+					<li class="slider-button">
+						<button type="button">button3</button>
+					</li>
+				</ul>
       </section>
 
       <section class="popular">
         <h2>Популярное</h2>
-        <ul class="popular-list">
+        <ul class="popular-list reset-list">
           <li class="popular-item">
             <h3><a href="catalog.html">Виртуальная<br> реальность</a></h3>
           </li>
@@ -164,15 +143,15 @@
         </ul>
       </section>
 
-      <section class="services">
+      <section class="service">
         <h2>Сервисы</h2>
-        <ul class="services-list">
-          <li><button class="button services-button" type="button">Доставка</button></li>
-          <li><button class="button services-button" type="button">Гарантия</button></li>
-          <li><button class="button services-button" type="button">Кредит</button></li>
+        <ul class="service-list reset-list">
+          <li><button class="button button-decor block-button service-button" type="button">Доставка</button></li>
+          <li><button class="button button-decor block-button service-button" type="button">Гарантия</button></li>
+          <li><button class="button button-decor block-button service-button" type="button">Кредит</button></li>
         </ul>
 
-        <div class="services-slide">
+        <div class="service-slide">
           <h3>Доставка</h3>
           <p>
             Мы с удовольствием доставим ваш товар прямо к вашему<br>
@@ -181,7 +160,7 @@
           </p>
         </div>
 
-        <div class="services-slide">
+        <div class="service-slide">
           <h3>Гарантия</h3>
           <p>
             Если из-за возгорания купленного у нас товара у вас сгорит дом —<br>
@@ -190,7 +169,7 @@
           </p>
         </div>
 
-        <div class="services-slide">
+        <div class="service-slide">
           <h3>Кредит</h3>
           <p>
             Залезть в долговую яму стало проще! Кредитные консультанты<br>
@@ -200,13 +179,13 @@
         </div>
       </section>
 
-      <section class="companies">
+      <section class="company">
         <h2>Компании-производители</h2>
-        <ul class="companies-list">
-          <li class="companies-item"><a href="#"><img src="img/companies/dji_logo.png" width="260" height="100" alt="Логотип DJI"></a></li>
-          <li class="companies-item"><a href="#"><img src="img/companies/sp_gadgets_logo.png" width="260" height="100" alt="Логотип SP Gadgets"></a></li>
-          <li class="companies-item"><a href="#"><img src="img/companies/gopro_logo.png" width="260" height="100" alt="Логотип GoPro"></a></li>
-          <li class="companies-item"><a href="#"><img src="img/companies/vive_logo.png" width="260" height="100" alt="Логотип VIVE"></a></li>
+        <ul class="company-list reset-list">
+          <li class="company-item"><a href="#"><img src="img/companies/dji_logo.png" width="260" height="100" alt="Логотип DJI"></a></li>
+          <li class="company-item"><a href="#"><img src="img/companies/sp_gadgets_logo.png" width="260" height="100" alt="Логотип SP Gadgets"></a></li>
+          <li class="company-item"><a href="#"><img src="img/companies/gopro_logo.png" width="260" height="100" alt="Логотип GoPro"></a></li>
+          <li class="company-item"><a href="#"><img src="img/companies/vive_logo.png" width="260" height="100" alt="Логотип VIVE"></a></li>
         </ul>
       </section>
 
@@ -220,12 +199,12 @@
           Мы можем доставить ваш товар в самые отдаленные точки<br>
           России! DEVICE работает со многими транспортными компаниями:
         </p>
-        <ul class="about-us-list">
+        <ul class="about-us-list reset-list">
           <li>Деловые линии</li>
           <li>Авторейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a class="button" href="blank.html">Подробнее о нас</a>
+        <a class="button button-decor block-button" href="blank.html">Подробнее о нас</a>
       </section>
 
       <section class="contacts">
@@ -235,11 +214,11 @@
           проверить работоспособность покупки. Всякое бывает.
         </p>
         <a class="contacts-map"><img src="img/map.png" width="560" height="222" alt="Карта с местоположением офиса. Адрес: Санкт-Петербург, набережная реки Карповки, 5, литера П."></a>
-        <a class="button" href="blank.html">Напишите нам</a>
+        <a class="button button-decor block-button" href="blank.html">Напишите нам</a>
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="page-footer">
       <section class="footer-contacts">
         <h2>Как нас найти</h2>
         <a class="footer-logo"><img src="img/logo_footer.svg" width="163" height="35" alt="Логотип Девайс"></a>
@@ -251,7 +230,7 @@
 
       <section class="footer-navigation">
         <h2>Навигационное меню</h2>
-        <ul class="footer-site-navigation">
+        <ul class="footer-site-navigation reset-list">
           <li><a href="blank.html">Доставка</a></li>
           <li><a href="blank.html">Гарантия</a></li>
           <li><a href="blank.html">Контакты</a></li>
@@ -260,7 +239,7 @@
 
       <section class="footer-social">
         <h2>Социальные сети</h2>
-        <ul class="footer-social-list">
+        <ul class="footer-social-list reset-list">
           <li><a class="social-button" href="#">Фейсбук</a></li>
           <li><a class="social-button" href="#">Инстаграм</a></li>
           <li><a class="social-button" href="#">Твиттер</a></li>
@@ -269,7 +248,7 @@
 
       <section class="footer-account">
         <h2>Личный кабинет</h2>
-        <ul class="footer-account-navigation">
+        <ul class="footer-account-navigation reset-list">
           <li><a href="blank.html">Войти</a></li>
           <li><a href="blank.html">Сравнить</a></li>
           <li><a href="blank.html">Корзина</a></li>
@@ -298,7 +277,7 @@
           <label for="writeus_textarea">Текст письма:</label>
           <textarea id="writeus_textarea" placeholder="В свободной форме"></textarea>
         </p>
-        <button class="button" type="submit">Отправить</button>
+        <button class="button button-decor block-button" type="submit">Отправить</button>
         <button class="modal-close" type="submit">Закрыть</button>
       </form>
     </section>
