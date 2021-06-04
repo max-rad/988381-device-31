@@ -1,4 +1,4 @@
-/* ===== FONTS/VARIABLES/GLOBAL/PAGE-HEADER/MAIN/PAGE-FOOTER/MODAL ===== */
+/* ========== FONTS/VARIABLES/GLOBAL/BUTTON/PAGE-HEADER/MAIN/PAGE-FOOTER/MODAL ========== */
 
 /* ===== FONTS ===== */
 
@@ -107,6 +107,26 @@ img {
 	min-width: 0;
 }
 
+/* ===== BUTTON ===== */
+
+.button {
+	font-family: "Gilroy", Arial, Helvetica, sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 22px;
+
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}
+
+.button-decor {
+	border: 0;
+	color: var(--basic-black);
+	background-color: transparent;
+}
+
+/* =========== INDEX.HTML ========== */
+
 /* =========== PAGE-HEADER ========== */
 
 /* ===== NAVIGATION ===== */
@@ -197,7 +217,7 @@ img {
 	opacity: 0.3;
 }
 
-/* ========== MAIN ========== */
+/* ========== MAIN/SLIDER/POPULAR/SERVICE/COMPANY/ABOUT-US/CONTACTS ========== */
 
 /* ========== SLIDER ========== */
 
@@ -492,6 +512,8 @@ img {
 
 /* ========== CATALOG.HTML ========== */
 
+/* ========== BREADCRUMBS/FILTERS/SORT/CATALOG ==========*/
+
 .page-title {
 	font-family: "Gilroy", Arial, Helvetica, sans-serif;
 	font-weight: 800;
@@ -499,7 +521,7 @@ img {
 	line-height: 58px;
 }
 
-/* ===== BREADCRUMBS ===== */
+/* ========== BREADCRUMBS ========== */
 
 .breadcrumbs {
 	font-size: 14px;
@@ -713,24 +735,6 @@ img {
 .pagination-item-next a:focus {
 	background-color: var(--basic-gray85);
 	opacity: 0.3;
-}
-
-/* ===== BUTTON ===== */
-
-.button {
-	font-family: "Gilroy", Arial, Helvetica, sans-serif;
-	font-weight: 800;
-	font-size: 18px;
-	line-height: 22px;
-
-	letter-spacing: 0.2em;
-	text-transform: uppercase;
-}
-
-.button-decor {
-	border: 0;
-	color: var(--basic-black);
-	background-color: transparent;
 }
 
 
