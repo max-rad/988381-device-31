@@ -57,6 +57,8 @@
   --special-green: #91c92f;
   --special-yellow-dark: #f0c52e;
 	--special-red-grayish-light: #f6dada;
+
+	--special-white-with-opacity: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -177,7 +179,7 @@ img {
 }
 
 .search button:focus {
-	color: rgba(255, 255, 255, 0.3);
+	color: var(--special-white-with-opacity);
 }
 
 /* ===== SITE-NAVIGATION/USER-NAVIGATION ===== */
@@ -539,6 +541,11 @@ img {
 
 .breadcrumbs a:focus {
 	opacity: 0.1;
+}
+
+.breadcrumbs-current a:hover,
+.breadcrumbs-current a:focus {
+	opacity: 0.3;
 }
 
 /* ========== FILTERS ========== */
