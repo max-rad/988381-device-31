@@ -269,6 +269,26 @@ img {
 	margin-bottom: 96px;
 }
 
+.slider-item {
+	display: grid;
+	grid-template-areas:
+	"image	info"
+	"image	button"
+	"image	stats";
+}
+
+/* ===== IMAGE ===== */
+
+.slider-item img {
+	grid-area: image;
+}
+
+/* ===== SLIDER-INFO ===== */
+
+.slider-info {
+	grid-area: info;
+}
+
 /* ===== H3 ===== */
 
 .slider-item h3 {
@@ -281,6 +301,8 @@ img {
 /* ===== SLIDER-NUMBER ===== */
 
 .slider-number {
+	/* position: absolute;
+	z-index: -1; */
 	font-family: "Gilroy", Arial, Helvetica, sans-serif;
 	font-weight: 800;
 	font-size: 179px;
@@ -289,10 +311,18 @@ img {
 	/* color: var(--basic-white); */
 }
 
+/* ===== SLIDER-BUTTON ===== */
+
+.slider-button {
+	grid-area: button;
+}
+
 /* ===== SLIDER-SPECIFICATION ===== */
 
 .slider-specification {
 	letter-spacing: 0.1em;
+
+	grid-area: stats;
 }
 
 .slider-specification dt {
@@ -308,6 +338,18 @@ img {
 
 /* ========== POPULAR ========== */
 
+.popular {
+	margin-bottom: 49px;
+}
+
+/* ===== POPULAR-LIST ===== */
+
+.popular-list {
+	display: grid;
+	grid-template-columns: repeat(6, 160px);
+	column-gap: 40px;
+}
+
 /* ===== POPULAR-ITEM ===== */
 
 .popular-item a {
@@ -321,6 +363,10 @@ img {
 	color: var(--basic-black);
 }
 
+.popular-item:nth-child(4) a {
+	letter-spacing: normal;
+}
+
 .popular-item a:focus {
 	opacity: 0.3;
 }
@@ -329,7 +375,16 @@ img {
 /* ========== SERVICE ========== */
 
 .service {
+	margin-bottom: 90px;
 	background-color:  var(--basic-grey-light);
+}
+
+/* ===== SERVICE-WRAPPER ===== */
+
+.service-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: flex-start;
 }
 
 /* ===== SERVICE-SLIDE ===== */
@@ -357,6 +412,26 @@ img {
 }
 
 /* ========== COMPANY ========== */
+
+.company {
+	margin-bottom: 90px;
+}
+
+/* ====== COMPANY-LIST ===== */
+
+.company-list {
+	display: grid;
+	grid-template-columns: repeat(4, 260px);
+	column-gap: 40px;
+}
+
+/* ========== INDEX-COLUMNS ========= */
+
+.index-columns {
+	display: grid;
+	grid-template-columns: 1fr 560px;
+	margin-bottom: 86px;
+}
 
 /* ========== ABOUT-US ========== */
 
@@ -400,12 +475,25 @@ img {
 /* ========== PAGE-FOOTER ========== */
 
 .page-footer {
+	padding: 0 140px;
+	padding-top: 46px;
+	padding-bottom: 65px;
 	background-color: var(--basic-dark);
+}
+
+.page-footer .container {
+	display: grid;
+	grid-template-areas:
+	"contacts	site		user"
+	"contacts site		phone"
+	"contacts	socials	link";
+	justify-content: space-between;
 }
 
 /* ===== FOOTER-CONTACTS ===== */
 
 .footer-contacts {
+	grid-area: contacts;
 	color: var(--basic-white);
 }
 
@@ -420,6 +508,16 @@ img {
 }
 
 /* ===== FOOTER-SITE-NAVIGATION ===== */
+
+.footer-navigation {
+	grid-area: site;
+	justify-self: center;
+}
+
+/* .footer-site-navigation {
+	display: flex;
+	column-gap: 36px;
+} */
 
 .footer-site-navigation a {
 	font-family: "Gilroy", Arial, Helvetica, sans-serif;
@@ -441,6 +539,11 @@ img {
 
 /* ===== FOOTER-SOCIAL-LIST ===== */
 
+.footer-social {
+	grid-area: socials;
+	justify-self: center;
+}
+
 .footer-social-list a {
 	color: var(--basic-white);
 	opacity: 0.3;
@@ -455,6 +558,11 @@ img {
 }
 
 /* ===== FOOTER-ACCOUNT-NAVIGATION ===== */
+
+.footer-account {
+	grid-area: user;
+	justify-self: end;
+}
 
 .footer-account-navigation a {
 	color: var(--basic-white);
@@ -472,6 +580,8 @@ img {
 /* ===== FOOTER-PHONE ===== */
 
 .footer-phone {
+	grid-area: phone;
+	justify-self: end;
 	color: var(--basic-white);
 }
 
@@ -480,6 +590,11 @@ img {
 }
 
 /* ===== FOOTER-LINK ===== */
+
+.footer-link {
+	grid-area: link;
+	justify-self: end;
+}
 
 .footer-link:hover {
 	opacity: 0.6;
