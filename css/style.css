@@ -77,6 +77,11 @@ body {
 
 	color: var(--basic-black);
 	background-color: var(--basic-white);
+
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
+	align-content: start;
 }
 
 a {
@@ -129,15 +134,36 @@ img {
 
 /* =========== INDEX.HTML ========== */
 
+/* =========== GRID =========== */
+
+.page {
+	height: 100%;
+}
+
 /* =========== PAGE-HEADER ========== */
 
 /* ===== NAVIGATION ===== */
 
 .navigation {
 	background-color: var(--special-yellow);
+
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 60px;
+
+	display: grid;
+	grid-template-areas:
+	"logo		logo"
+	"search	user"
+	"site		site";
 }
 
 /* ===== HEADER-LOGO ===== */
+
+.header-logo {
+	justify-self: start;
+	grid-area: logo;
+}
 
 .header-logo:hover {
 	opacity: 0.6;
@@ -148,6 +174,11 @@ img {
 }
 
 /* ===== SEARCH ===== */
+
+.search {
+	justify-self: start;
+	grid-area: search;
+}
 
 .search input {
 	outline: none;
@@ -192,6 +223,8 @@ img {
 
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
+
+	grid-area: site;
 }
 
 .site-navigation-dropdown {
@@ -202,6 +235,10 @@ img {
 
 	letter-spacing: normal;
 	text-transform: none;
+}
+
+.user-navigation {
+	grid-area: user;
 }
 
 .user-navigation a,
@@ -221,7 +258,16 @@ img {
 
 /* ========== MAIN/SLIDER/POPULAR/SERVICE/COMPANY/ABOUT-US/CONTACTS ========== */
 
+.container {
+	width: 1160px;
+	margin: 0 auto;
+}
+
 /* ========== SLIDER ========== */
+
+.slider {
+	margin-bottom: 96px;
+}
 
 /* ===== H3 ===== */
 
