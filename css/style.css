@@ -66,7 +66,7 @@
 /* ===== GLOBAL ===== */
 
 body {
-	min-width: 960px;
+	min-width: 1160px;
 	margin: 0;
 	padding: 0;
 
@@ -149,7 +149,7 @@ img {
 
 	width: 1160px;
 	margin: 0 auto;
-	padding: 0 60px;
+	padding: 0 20px;
 
 	display: grid;
 	grid-template-areas:
@@ -261,6 +261,7 @@ img {
 .container {
 	width: 1160px;
 	margin: 0 auto;
+	padding: 0 20px;
 }
 
 /* ========== SLIDER ========== */
@@ -475,7 +476,6 @@ img {
 /* ========== PAGE-FOOTER ========== */
 
 .page-footer {
-	padding: 0 140px;
 	padding-top: 46px;
 	padding-bottom: 65px;
 	background-color: var(--basic-dark);
@@ -675,20 +675,41 @@ img {
 
 /* ========== CATALOG.HTML ========== */
 
+.inner-page .page-header {
+	margin-bottom: 44px;
+}
+
+.page-catalog .container {
+	display: grid;
+	grid-template-areas:
+	"title title"
+	"breadcrumbs breadcrumbs"
+	"filter sort"
+	"filter catalog";
+	grid-template-columns: 468px 1fr;
+}
+
 /* ========== BREADCRUMBS/FILTERS/SORT/CATALOG ==========*/
 
 .page-title {
+	margin-bottom: 30px;
+
 	font-family: "Gilroy", Arial, Helvetica, sans-serif;
 	font-weight: 800;
 	font-size: 47px;
 	line-height: 58px;
+
+	grid-area: title;
 }
 
 /* ========== BREADCRUMBS ========== */
 
 .breadcrumbs {
+	margin-bottom: 50px;
 	font-size: 14px;
 	line-height: 19px;
+
+	grid-area: breadcrumbs;
 }
 
 .breadcrumbs a {
@@ -711,6 +732,12 @@ img {
 
 /* ========== FILTERS ========== */
 
+.filters {
+	background-color: var(--basic-grey-light);
+
+	grid-area: filter;
+}
+
 .filters h2 {
 	font-family: "Gilroy", Arial, Helvetica, sans-serif;
 	font-weight: 800;
@@ -724,10 +751,6 @@ img {
 }
 
 /* ===== FILTER ===== */
-
-.filter {
-	background-color: var(--basic-grey-light);
-}
 
 .filter legend {
 	font-family: "Gilroy", Arial, Helvetica, sans-serif;
@@ -747,6 +770,8 @@ img {
 
 .sort {
 	background-color: var(--basic-grey-light);
+
+	grid-area: sort;
 }
 
 .sort h2 {
@@ -811,6 +836,10 @@ img {
 
 /* ========== CATALOG ========== */
 
+.catalog {
+	grid-area: catalog;
+}
+
 .catalog-item h3 {
 	font-family: "Gilroy", Arial, Helvetica, sans-serif;
 	font-weight: 800;
@@ -850,6 +879,8 @@ img {
 /* ===== PAGINATION-LIST ===== */
 
 .pagination-list {
+	margin-bottom: 78px;
+
 	font-family: "Gilroy", Arial, Helvetica, sans-serif;
 	font-weight: 800;
 	font-size: 16px;
