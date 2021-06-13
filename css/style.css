@@ -235,13 +235,6 @@ img {
 	grid-area: site-nav;
 }
 
-/* .site-navigation-catalog::after {
-	margin-left: 16px;
-	margin-right: 286px;
-	content: "";
-	background-image: url("F:/GitHub/988381-device-31/img/icons/icont_cross.svg");
-} */
-
 .site-navigation-dropdown {
 	font-family: "Open Sans", Arial, Helvetica, sans-serif;
 	font-weight: 300;
@@ -462,9 +455,6 @@ img {
 /* ========== INDEX-COLUMNS ========= */
 
 .index-columns {
-	/* display: grid;
-	grid-template-columns: 1fr 560px;
-	margin-bottom: 86px; */
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 86px;
