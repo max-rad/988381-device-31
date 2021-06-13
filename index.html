@@ -32,7 +32,7 @@
 
         <ul class="site-navigation reset-list">
           <li>
-            <a href="catalog.html">Каталог товаров</a>
+            <a class="site-navigation-catalog" href="catalog.html">Каталог товаров</a>
             <ul class="site-navigation-dropdown reset-list">
               <li><a href="blank.html">Виртуальная реальность</a></li>
               <li><a href="blank.html">Фитнес-браслеты</a></li>
@@ -50,10 +50,10 @@
     </header>
 
     <main class="main">
-			<div class="container">
-				<h1 class="reset-h">Интернет-магазин гаджетов Девайс</h1>
+			<h1 class="reset-h">Интернет-магазин гаджетов Девайс</h1>
 
-				<section class="slider">
+			<section class="slider">
+				<div class="container">
 					<h2 class="reset-h">Подборка товаров</h2>
 
 					<ul class="slider-list reset-list">
@@ -124,10 +124,13 @@
 							<button type="button">button3</button>
 						</li>
 					</ul>
-				</section>
+				</div>
+			</section>
 
-				<section class="popular">
+			<section class="popular">
+				<div class="container">
 					<h2 class="reset-h">Популярное</h2>
+
 					<ul class="popular-list reset-list">
 						<li class="popular-item">
 							<h3 class="reset-h"><a href="catalog.html">Виртуальная<br> реальность</a></h3>
@@ -148,10 +151,13 @@
 							<h3 class="reset-h"><a href="catalog.html">Квадрокоптеры</a></h3>
 						</li>
 					</ul>
-				</section>
+				</div>
+			</section>
 
-				<section class="service">
+			<section class="service">
+				<div class="container">
 					<h2 class="reset-h">Сервисы</h2>
+
 					<div class="service-wrapper">
 						<ul class="service-list reset-list">
 							<li><button class="button button-decor block-button service-button" type="button">Доставка</button></li>
@@ -186,21 +192,27 @@
 							</p>
 						</div>
 					</div>
-				</section>
+				</div>
+			</section>
 
-				<section class="company">
+			<section class="company">
+				<div class="container">
 					<h2 class="reset-h">Компании-производители</h2>
+
 					<ul class="company-list reset-list">
 						<li class="company-item"><a href="#"><img src="img/companies/dji_logo.png" width="260" height="100" alt="Логотип DJI"></a></li>
 						<li class="company-item"><a href="#"><img src="img/companies/sp_gadgets_logo.png" width="260" height="100" alt="Логотип SP Gadgets"></a></li>
 						<li class="company-item"><a href="#"><img src="img/companies/gopro_logo.png" width="260" height="100" alt="Логотип GoPro"></a></li>
 						<li class="company-item"><a href="#"><img src="img/companies/vive_logo.png" width="260" height="100" alt="Логотип VIVE"></a></li>
 					</ul>
-				</section>
+				</div>
+			</section>
 
+			<div class="container">
 				<div class="index-columns">
 					<section class="about-us">
 						<h2 class="reset-h">О нас</h2>
+
 						<p class="reset-p">
 							Огромный выбор гаджетов не оставит равнодушным гика,<br>
 							который есть в каждом из нас.
@@ -223,7 +235,9 @@
 							Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
 							проверить работоспособность покупки. Всякое бывает.
 						</p>
-						<a class="contacts-map"><img src="img/map.png" width="560" height="222" alt="Карта с местоположением офиса. Адрес: Санкт-Петербург, набережная реки Карповки, 5, литера П."></a>
+						<a class="contacts-map">
+							<img src="img/map.png" width="560" height="222" alt="Карта с местоположением офиса. Адрес: Санкт-Петербург, набережная реки Карповки, 5, литера П.">
+						</a>
 						<a class="button button-decor block-button" href="blank.html">Напишите нам</a>
 					</section>
 				</div>
@@ -291,7 +305,7 @@
           <label for="writeus_textarea">Текст письма:</label>
           <textarea id="writeus_textarea" placeholder="В свободной форме"></textarea>
         </p>
-        <button class="button button-decor block-button" type="submit">Отправить</button>
+        <button class="modal-submit button button-decor block-button" type="submit">Отправить</button>
         <button class="modal-close" type="submit">Закрыть</button>
       </form>
     </section>
