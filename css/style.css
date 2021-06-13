@@ -796,9 +796,7 @@ img {
 	height: 50px;
 	display: block;
 	box-sizing: border-box;
-	padding-top: 16px;
-	padding-left: 20px;
-	padding-bottom: 15px;
+	padding: 16px 20px 15px;
 }
 
 .modal-email input {
@@ -806,9 +804,7 @@ img {
 	height: 50px;
 	display: block;
 	box-sizing: border-box;
-	padding-top: 16px;
-	padding-left: 20px;
-	padding-bottom: 15px;
+	padding: 16px 20px 15px;
 }
 
 .modal-text textarea {
@@ -816,8 +812,7 @@ img {
 	height: 167px;
 	display: block;
 	box-sizing: border-box;
-	padding-top: 16px;
-	padding-left: 20px;
+	padding: 16px 20px;
 }
 
 .modal-write-us input::placeholder,
