@@ -13,48 +13,52 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-    <header class="page-header">
-      <nav class="navigation">
-        <a class="header-logo">
-          <img src="img/logo_header.svg" width="163" height="35" alt="Логотип Девайс">
-        </a>
+		<header class="page-header">
+			<div class="container">
+				<nav class="navigation">
+					<a class="header-logo">
+						<img src="img/logo_header.svg" width="163" height="35" alt="Логотип Девайс">
+					</a>
 
-        <form class="search" action="https://echo.htmlacademy.ru" method="get">
-          <input type="search" placeholder="Поиск по сайту">
-          <button type="submit">найти</button>
-        </form>
+					<div class="user-menu">
+						<form class="search" action="https://echo.htmlacademy.ru" method="get">
+							<input type="search" placeholder="Поиск по сайту">
+							<button type="submit">найти</button>
+						</form>
 
-        <ul class="user-navigation reset-list">
-          <li><a href="blank.html">Войти</a></li>
-          <li><a href="blank.html">Сравнить</a></li>
-          <li><a href="blank.html">Корзина</a></li>
-        </ul>
+						<ul class="user-navigation reset-list">
+							<li class="user-navigation-item user-navigation-login"><a href="blank.html">Войти</a></li>
+							<li class="user-navigation-item user-navigation-compare"><a href="blank.html">Сравнить</a></li>
+							<li class="user-navigation-item user-navigation-cart"><a href="blank.html">Корзина</a></li>
+						</ul>
+					</div>
 
-        <ul class="site-navigation reset-list">
-          <li>
-            <a class="site-navigation-catalog" href="catalog.html">Каталог товаров</a>
-            <ul class="site-navigation-dropdown reset-list">
-              <li><a href="blank.html">Виртуальная реальность</a></li>
-              <li><a href="blank.html">Фитнес-браслеты</a></li>
-              <li><a href="blank.html">Квадрокоптер</a></li>
-              <li><a href="blank.html">Моноподы для селфи</a></li>
-              <li><a href="blank.html">Умные часы</a></li>
-              <li><a href="blank.html">Экшн-камеры</a></li>
-            </ul>
-          </li>
-          <li><a href="blank.html">Доставка</a></li>
-          <li><a href="blank.html">Гарантия</a></li>
-          <li><a href="blank.html">Контакты</a></li>
-        </ul>
-      </nav>
-    </header>
+					<ul class="site-navigation reset-list">
+						<li class="site-navigation-item site-navigation-catalog">
+							<a href="catalog.html">Каталог товаров</a>
+							<ul class="site-navigation-dropdown reset-list">
+								<li class="dropdown-item"><a href="blank.html">Виртуальная реальность</a></li>
+								<li class="dropdown-item"><a href="blank.html">Фитнес-браслеты</a></li>
+								<li class="dropdown-item"><a href="blank.html">Квадрокоптер</a></li>
+								<li class="dropdown-item"><a href="blank.html">Моноподы для селфи</a></li>
+								<li class="dropdown-item"><a href="blank.html">Умные часы</a></li>
+								<li class="dropdown-item"><a href="blank.html">Экшн-камеры</a></li>
+							</ul>
+						</li>
+						<li class="site-navigation-item site-navigation-delivery"><a href="blank.html">Доставка</a></li>
+						<li class="site-navigation-item site-navigation-warranty"><a href="blank.html">Гарантия</a></li>
+						<li class="site-navigation-item site-navigation-contacts"><a href="blank.html">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
 
     <main class="main">
-			<h1 class="reset-h">Интернет-магазин гаджетов Девайс</h1>
+			<div class="container">
+				<h1 class="visually-hidden reset-h">Интернет-магазин гаджетов Девайс</h1>
 
-			<section class="slider">
-				<div class="container">
-					<h2 class="reset-h">Подборка товаров</h2>
+				<section class="slider">
+					<h2 class="visually-hidden reset-h">Подборка товаров</h2>
 
 					<ul class="slider-list reset-list">
 						<li class="slider-item">
@@ -77,7 +81,7 @@
 								<dd>Материал</dd>
 							</dl>
 						</li>
-						<li class="slider-item">
+						<!-- <li class="slider-item">
 							<div class="slider-number">02</div>
 							<img src="img/slides/slide_fitness_tracker.jpg" width="345" height="485" alt="Силиконовый фитнес-браслет черного цвета">
 							<div class="slider-info">
@@ -110,7 +114,7 @@
 								<dt>50 м</dt>
 								<dd>Радиус поражения</dd>
 							</dl>
-						</li>
+						</li> -->
 					</ul>
 
 					<ul class="slider-buttons reset-list">
@@ -124,12 +128,10 @@
 							<button type="button">button3</button>
 						</li>
 					</ul>
-				</div>
-			</section>
+				</section>
 
-			<section class="popular">
-				<div class="container">
-					<h2 class="reset-h">Популярное</h2>
+				<section class="popular">
+					<h2 class="visually-hidden reset-h">Популярное</h2>
 
 					<ul class="popular-list reset-list">
 						<li class="popular-item">
@@ -151,12 +153,12 @@
 							<h3 class="reset-h"><a href="catalog.html">Квадрокоптеры</a></h3>
 						</li>
 					</ul>
-				</div>
-			</section>
+				</section>
+			</div>
 
 			<section class="service">
 				<div class="container">
-					<h2 class="reset-h">Сервисы</h2>
+					<h2 class="visually-hidden reset-h">Сервисы</h2>
 
 					<div class="service-wrapper">
 						<ul class="service-list reset-list">
@@ -174,7 +176,7 @@
 							</p>
 						</div>
 
-						<div class="service-slide">
+						<!-- <div class="service-slide">
 							<h3 class="reset-h">Гарантия</h3>
 							<p class="reset-p">
 								Если из-за возгорания купленного у нас товара у вас сгорит дом —<br>
@@ -190,14 +192,14 @@
 								подберут для вас наиболее выгодные<br>
 								условия кредита. Выгодные для нашего банка, разумеется.
 							</p>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</section>
 
-			<section class="company">
-				<div class="container">
-					<h2 class="reset-h">Компании-производители</h2>
+			<div class="container">
+				<section class="company">
+					<h2 class="visually-hidden reset-h">Компании-производители</h2>
 
 					<ul class="company-list reset-list">
 						<li class="company-item"><a href="#"><img src="img/companies/dji_logo.png" width="260" height="100" alt="Логотип DJI"></a></li>
@@ -205,10 +207,8 @@
 						<li class="company-item"><a href="#"><img src="img/companies/gopro_logo.png" width="260" height="100" alt="Логотип GoPro"></a></li>
 						<li class="company-item"><a href="#"><img src="img/companies/vive_logo.png" width="260" height="100" alt="Логотип VIVE"></a></li>
 					</ul>
-				</div>
-			</section>
+				</section>
 
-			<div class="container">
 				<div class="index-columns">
 					<section class="about-us">
 						<h2 class="reset-h">О нас</h2>
@@ -247,7 +247,7 @@
     <footer class="page-footer">
 			<div class="container">
 				<section class="footer-contacts">
-					<h2 class="reset-h">Как нас найти</h2>
+					<h2 class="visually-hidden reset-h">Как нас найти</h2>
 					<a class="footer-logo"><img src="img/logo_footer.svg" width="163" height="35" alt="Логотип Девайс"></a>
 					<p class="reset-p">
 						Санкт-Петербург, набережная<br>
@@ -256,7 +256,7 @@
 				</section>
 
 				<section class="footer-navigation">
-					<h2 class="reset-h">Навигационное меню</h2>
+					<h2 class="visually-hidden reset-h">Навигационное меню</h2>
 					<ul class="footer-site-navigation reset-list">
 						<li><a href="blank.html">Доставка</a></li>
 						<li><a href="blank.html">Гарантия</a></li>
@@ -265,7 +265,7 @@
 				</section>
 
 				<section class="footer-social">
-					<h2 class="reset-h">Социальные сети</h2>
+					<h2 class="visually-hidden reset-h">Социальные сети</h2>
 					<ul class="footer-social-list reset-list">
 						<li><a class="social-button" href="#">Фейсбук</a></li>
 						<li><a class="social-button" href="#">Инстаграм</a></li>
@@ -274,7 +274,7 @@
 				</section>
 
 				<section class="footer-account">
-					<h2 class="reset-h">Личный кабинет</h2>
+					<h2 class="visually-hidden reset-h">Личный кабинет</h2>
 					<ul class="footer-account-navigation reset-list">
 						<li><a href="blank.html">Войти</a></li>
 						<li><a href="blank.html">Сравнить</a></li>
@@ -291,7 +291,7 @@
     </footer>
 
     <section class="modal modal-write-us">
-      <h2 class="reset-h">Напишите нам</h2>
+      <h2 class="visually-hidden reset-h">Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p class="modal-name reset-p">
           <label for="writeus_name">Ваше имя:</label>
@@ -311,7 +311,7 @@
     </section>
 
     <section class="modal modal-map">
-      <h2 class="reset-h">Как до нас добраться</h2>
+      <h2 class="visually-hidden reset-h">Как до нас добраться</h2>
       <!-- Здесь будет интерактивная карта -->
       <button class="modal-close" type="button">Закрыть</button>
     </section>
