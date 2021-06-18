@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body inner-page">
-    <header class="page-header">
+		<header class="page-header">
 			<div class="container">
 				<nav class="navigation">
 					<a class="header-logo" href="index.html">
@@ -22,31 +22,43 @@
 
 					<div class="user-menu">
 						<form class="search" action="https://echo.htmlacademy.ru" method="get">
-							<input type="search" placeholder="Поиск по сайту">
-							<button type="submit">найти</button>
+							<label for="search"></label>
+							<input class="search-field" id="search" type="search" placeholder="Поиск по сайту">
+							<button class="search-button" type="submit">найти</button>
 						</form>
 
 						<ul class="user-navigation reset-list">
-							<li class="user-navigation-item user-navigation-login">
-								<a class="user-link-profile" href="blank.html">Валентин Петухов</a>
-								<a class="user-link-logout" href="blank.html">Выйти</a>
+							<li class="visually-hidden user-navigation-item user-navigation-login">
+								<a href="blank.html">Войти</a>
 							</li>
-							<li class="user-navigation-item user-navigation-compare"><a href="blank.html">Сравнить</a></li>
-							<li class="user-navigation-item user-navigation-cart"><a href="blank.html">Корзина</a></li>
+							<li class="user-navigation-item user-navigation-profile">
+								<a href="blank.html">Валентин Петухов</a>
+							</li>
+							<li class="user-navigation-item user-navigation-logout">
+								<a href="blank.html">Выйти</a>
+							</li>
+							<li class="user-navigation-item user-navigation-compare">
+								<a href="blank.html">Сравнить</a>
+							</li>
+							<li class="user-navigation-item user-navigation-cart">
+								<a href="blank.html">Корзина</a>
+							</li>
 						</ul>
 					</div>
 
 					<ul class="site-navigation reset-list">
 						<li class="site-navigation-item site-navigation-catalog">
-							<a href="catalog.html">Каталог товаров</a>
-							<ul class="site-navigation-dropdown reset-list">
-								<li class="dropdown-item"><a href="blank.html">Виртуальная реальность</a></li>
-								<li class="dropdown-item"><a href="blank.html">Фитнес-браслеты</a></li>
-								<li class="dropdown-item"><a href="blank.html">Квадрокоптер</a></li>
-								<li class="dropdown-item"><a href="blank.html">Моноподы для селфи</a></li>
-								<li class="dropdown-item"><a href="blank.html">Умные часы</a></li>
-								<li class="dropdown-item"><a href="blank.html">Экшн-камеры</a></li>
-							</ul>
+							<a class="link-catalog" href="#">Каталог товаров</a>
+							<div class="dropdown-menu">
+								<ul class="site-navigation-dropdown reset-list">
+									<li class="dropdown-item"><a href="blank.html">Виртуальная реальность</a></li>
+									<li class="dropdown-item"><a href="blank.html">Фитнес-браслеты</a></li>
+									<li class="dropdown-item"><a href="blank.html">Квадрокоптер</a></li>
+									<li class="dropdown-item"><a href="blank.html">Моноподы для селфи</a></li>
+									<li class="dropdown-item"><a href="blank.html">Умные часы</a></li>
+									<li class="dropdown-item"><a href="blank.html">Экшн-камеры</a></li>
+								</ul>
+							</div>
 						</li>
 						<li class="site-navigation-item site-navigation-delivery"><a href="blank.html">Доставка</a></li>
 						<li class="site-navigation-item site-navigation-warranty"><a href="blank.html">Гарантия</a></li>
@@ -54,7 +66,7 @@
 					</ul>
 				</nav>
 			</div>
-    </header>
+		</header>
 
     <main class="page-catalog main">
 			<header class="catalog-header">
@@ -143,7 +155,7 @@
 
 				<section class="catalog">
 					<div class="catalog-container">
-						<h2 class="reset-h">Список товаров</h2>
+						<h2 class="visually-hidden reset-h">Список товаров</h2>
 						<ul class="catalog-list reset-list">
 							<li class="catalog-item">
 								<article class="product">
