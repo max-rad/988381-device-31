@@ -379,19 +379,19 @@ img {
 	opacity: 0.3;
 }
 
-.link-catalog:hover + .dropdown-menu {
+.site-navigation-catalog:hover .dropdown-menu {
 	display: block;
 }
 
 .dropdown-menu {
-	width: 1160px;
+	position: absolute;
+	display: none;
 	left: -60px;
+	width: 1160px;
 	padding-top: 30px;
 	padding-right: 60px;
 	padding-bottom: 42px;
 	padding-left: 60px;
-	display: none;
-	position: absolute;
 	background-color: var(--special-yellow);
 	z-index: 1;
 }
@@ -671,6 +671,7 @@ img {
 	border-radius: 50%;
 	border: 1px solid var(--basic-black);
 	background-color: transparent;
+	cursor: pointer;
 }
 
 .slider-control-current button {
