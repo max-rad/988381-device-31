@@ -157,6 +157,7 @@ img {
 	border: 0;
 	color: var(--basic-black);
 	background-color: transparent;
+	cursor: pointer;
 }
 
 .block-button {
@@ -906,10 +907,8 @@ img {
 /* ========== SERVICE ========== */
 
 .service {
-	/* height: 403px; */
 	margin-bottom: 90px;
 	padding-bottom: 68px;
-	/* background-color:  var(--basic-grey-light); */
 	background-image: linear-gradient(to bottom, var(--basic-white) 115px, var(--basic-grey-light) 115px);
 }
 
