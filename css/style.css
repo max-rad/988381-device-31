@@ -1220,6 +1220,7 @@ img {
 	/* margin-top: 64px; */
 	margin-top: 18px;
 	margin-bottom: 40px;
+	cursor: pointer;
 }
 
 .footer-logo:hover {
