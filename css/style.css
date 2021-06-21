@@ -561,6 +561,7 @@ img {
 /* ========== MAIN/SLIDER/POPULAR/SERVICE/COMPANY/ABOUT-US/CONTACTS ========== */
 
 .container {
+	/* position: relative; */
 	width: 1200px;
 	margin: 0 auto;
 	padding: 0 20px;
@@ -679,6 +680,10 @@ img {
 	box-shadow:
 		inset 0 0 0 2px var(--basic-white),
 		inset 0 0 0 3px var(--basic-black);
+
+		/* padding: 3px;
+		background-color: black;
+		background-clip: content-box; */
 }
 
 /* ===== SLIDER-SPECIFICATION ===== */
@@ -727,8 +732,12 @@ img {
 
 /* ===== POPULAR-ITEM ===== */
 
+.popular-item h3 {
+}
+
 .popular-item a {
 	position: relative;
+	padding-top: 198px;
 }
 
 .popular-item:nth-child(1) a::before {
@@ -740,8 +749,7 @@ img {
 	background-image: url("../img/popular/virtual_reality_helm.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	/* background-position: 50% 50%; */
-	top: -148px;
+	top: 51px;
 	left: 31px;
 }
 
@@ -752,7 +760,7 @@ img {
 	height: 160px;
 	background-color: var(--special-yellow);
 	background-position: 0 0;
-	top: -200px;
+	top: 0;
 	left: 0;
 }
 
@@ -765,7 +773,7 @@ img {
 	background-image: url("../img/popular/monopod_for_selfie.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	top: -174px;
+	top: 25px;
 	left: 37px;
 }
 
@@ -776,7 +784,7 @@ img {
 	height: 160px;
 	background-color: var(--special-yellow);
 	background-position: 0 0;
-	top: -200px;
+	top: 0;
 	left: 0;
 }
 
@@ -789,7 +797,7 @@ img {
 	background-image: url("../img/popular/action_camera.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	top: -164px;
+	top: 35px;
 	left: 44px;
 }
 
@@ -800,7 +808,7 @@ img {
 	height: 160px;
 	background-color: var(--special-yellow);
 	background-position: 0 0;
-	top: -200px;
+	top: 0;
 	left: 0;
 }
 
@@ -813,7 +821,7 @@ img {
 	background-image: url("../img/popular/fitness_tracker.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	top: -152px;
+	top: 47px;
 	left: 27px;
 }
 
@@ -824,7 +832,7 @@ img {
 	height: 160px;
 	background-color: var(--special-yellow);
 	background-position: 0 0;
-	top: -200px;
+	top: 0;
 	left: 0;
 }
 
@@ -837,7 +845,7 @@ img {
 	background-image: url("../img/popular/smart_watch.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	top: -169px;
+	top: 30px;
 	left: 52px;
 }
 
@@ -848,7 +856,7 @@ img {
 	height: 160px;
 	background-color: var(--special-yellow);
 	background-position: 0 0;
-	top: -200px;
+	top: 0;
 	left: 0;
 }
 
@@ -861,7 +869,7 @@ img {
 	background-image: url("../img/popular/quadcopter.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	top: -154px;
+	top: 45px;
 	left: 14px;
 }
 
@@ -872,7 +880,7 @@ img {
 	height: 160px;
 	background-color: var(--special-yellow);
 	background-position: 0 0;
-	top: -200px;
+	top: 0;
 	left: 0;
 }
 
@@ -891,7 +899,11 @@ img {
 	letter-spacing: normal;
 }
 
-.popular-item a:hover::after {
+/* .popular-item a:hover::after {
+	background-color: var(--special-yellow-dark);
+} */
+
+.popular-item:hover a::after {
 	background-color: var(--special-yellow-dark);
 }
 
@@ -1039,16 +1051,12 @@ img {
 
 /* ===== COMAPANY-LINK ===== */
 
-.company-link img:last-child {
-	display: none;
+.company-link img {
+	filter: grayscale(100%) opacity(0.2);
 }
 
-.company-link:hover img:first-child {
-	display: none;
-}
-
-.company-link:hover img:last-child {
-	display: block;
+.company-link:hover img {
+	filter: grayscale(0) opacity(1);
 }
 
 /* ========== INDEX-COLUMNS ========= */
@@ -1716,6 +1724,7 @@ img {
 
 .breadcrumbs-current a:hover,
 .breadcrumbs-current a:focus {
+	cursor: default;
 	opacity: 0.3;
 }
 
@@ -1752,16 +1761,6 @@ img {
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 }
-
-/* .filters h2::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 0;
-	background-color: inherit;
-	width: 100vw;
-	height: 20px;
-} */
 
 /* ===== FILTER ===== */
 
@@ -2077,6 +2076,7 @@ img {
 .sort-item-current a,
 .sort-item-current a:hover,
 .sort-item-current a:focus {
+	cursor: default;
 	opacity: 1;
 }
 
@@ -2335,9 +2335,14 @@ img {
 	opacity: 1;
 }
 
+.pagination-item-disabled {
+	pointer-events: none;
+}
+
 .pagination-item-current a,
 .pagination-item-current a:hover,
 .pagination-item-current a:focus {
+	cursor: default;
 	opacity: 1;
 }
 
