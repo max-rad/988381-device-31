@@ -573,7 +573,8 @@ img {
 	width: 1160px;
 	position: relative;
 	top: -130px;
-	margin-bottom: 170px;
+	/* margin-bottom: 170px; */
+	margin-bottom: -28px;
 }
 
 .slide {
@@ -732,7 +733,7 @@ img {
 
 /* ===== POPULAR-ITEM ===== */
 
-.popular-item a {
+.popular-item {
 	position: relative;
 	padding-top: 198px;
 }
@@ -896,7 +897,7 @@ img {
 	letter-spacing: normal;
 }
 
-.popular-item a:hover::after {
+.popular-item:hover a::after {
 	background-color: var(--special-yellow-dark);
 }
 
