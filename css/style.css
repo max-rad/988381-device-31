@@ -397,17 +397,12 @@ img {
 	z-index: 1;
 }
 
+.dropdown-menu-wrapper {
+	display: flex;
+}
+
 .site-navigation-dropdown {
-	width: 530px;
-	display: grid;
-	grid-template-areas:
-	"item1 item2 item3"
-	"item4 item5 item5"
-	"item6 item6 item6";
-	grid-template-columns: 179px 125px 104px;
-	column-gap: 61px;
-	row-gap: 16px;
-	justify-content: space-between;
+	margin-right: 63px;
 
 	font-family: "Open Sans", Arial, Helvetica, sans-serif;
 	font-weight: 300;
@@ -418,28 +413,16 @@ img {
 	text-transform: none;
 }
 
-.dropdown-item:nth-child(1) {
-	grid-area: item1;
+.site-navigation-dropdown:last-child {
+	margin-right: 0;
 }
 
-.dropdown-item:nth-child(2) {
-	grid-area: item2;
+.site-navigation-dropdown li {
+	margin-bottom: 16px;
 }
 
-.dropdown-item:nth-child(3) {
-	grid-area: item3;
-}
-
-.dropdown-item:nth-child(4) {
-	grid-area: item4;
-}
-
-.dropdown-item:nth-child(5) {
-	grid-area: item5;
-}
-
-.dropdown-item:nth-child(6) {
-	grid-area: item6;
+.site-navigation-dropdown li:last-child {
+	margin-bottom: 0;
 }
 
 .user-navigation {
@@ -573,8 +556,7 @@ img {
 	width: 1160px;
 	position: relative;
 	top: -130px;
-	/* margin-bottom: 170px; */
-	margin-bottom: -28px;
+	margin-bottom: 170px;
 }
 
 .slide {
@@ -658,7 +640,7 @@ img {
 
 .slider-controls {
 	position: absolute;
-	top: 336px;
+	bottom: 149px;
 	right: 89px;
 	width: 72px;
 	display: flex;
@@ -733,7 +715,7 @@ img {
 
 /* ===== POPULAR-ITEM ===== */
 
-.popular-item {
+.popular-item a {
 	position: relative;
 	padding-top: 198px;
 }
@@ -883,6 +865,7 @@ img {
 }
 
 .popular-item a {
+
 	font-family: "Gilroy", Arial, Helvetica, sans-serif;
 	font-weight: 800;
 	font-size: 18px;
@@ -897,7 +880,7 @@ img {
 	letter-spacing: normal;
 }
 
-.popular-item:hover a::after {
+.popular-item a:hover::after {
 	background-color: var(--special-yellow-dark);
 }
 
@@ -1181,7 +1164,6 @@ img {
 /* ========== PAGE-FOOTER ========== */
 
 .page-footer {
-	height: 324px;
 	background-color: var(--basic-dark);
 }
 
@@ -1193,14 +1175,13 @@ img {
 	"contacts	user		user"
 	"contacts site		phone"
 	"contacts	socials	link";
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 368px 424px 368px;
 }
 
 /* ===== FOOTER-CONTACTS ===== */
 
 .footer-contacts {
 	position: relative;
-	width: 220px;
 	grid-area: contacts;
 	justify-self: start;
 	color: var(--basic-white);
@@ -1209,7 +1190,7 @@ img {
 .footer-contacts:after {
 	content: "";
 	position: absolute;
-	bottom: 19px;
+	bottom: 23px;
 	width: 80px;
 	height: 7px;
 	background-color: var(--special-pure-yellow);
@@ -1237,8 +1218,8 @@ img {
 /* ===== FOOTER-SITE-NAVIGATION ===== */
 
 .footer-navigation {
-	width: 423px;
 	grid-area: site;
+	justify-content: center;
 }
 
  .footer-site-navigation {
@@ -1273,13 +1254,21 @@ img {
 .footer-social {
 	grid-area: socials;
 	justify-self: center;
-	padding-bottom: 6px;
 }
 
 .footer-social-list {
-	width: 136px;
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	/* justify-content: space-between; */
+}
+
+.footer-social-list li {
+	margin-right: 20px;
+	padding-bottom: 10px;
+}
+
+.footer-social-list li:last-child {
+	margin-right: 0;
 }
 
 .footer-social-list a {
@@ -1316,7 +1305,6 @@ img {
 /* ===== FOOTER-ACCOUNT-NAVIGATION ===== */
 
 .footer-user {
-	width: 480px;
 	grid-area: user;
 	justify-self: end;
 	margin-bottom: 73px;
