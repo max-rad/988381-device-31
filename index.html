@@ -10,7 +10,7 @@
     <link rel="manifest" href="manifest.webmanifest">
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
 		<header class="page-header">
@@ -22,7 +22,7 @@
 
 					<div class="user-menu">
 						<form class="search" action="https://echo.htmlacademy.ru" method="get">
-							<label for="search"></label>
+							<label class="visually-hidden" for="search">Поле поиска</label>
 							<input class="search-field" id="search" type="search" placeholder="Поиск по сайту" required>
 							<button class="search-button" type="submit">найти</button>
 						</form>
@@ -281,7 +281,7 @@
 							Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
 							проверить работоспособность покупки. Всякое бывает.
 						</p>
-						<a class="contacts-map">
+						<a class="contacts-map" href="https://www.google.ru/maps/place/HTML+Academy/@59.968266,30.3152202,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca5afc31:0x5f2ac55f567b2400!8m2!3d59.9682674!4d30.3174119">
 							<img src="img/map.png" width="560" height="222" alt="Офис компании по адресу: Санкт-Петербург, набережная реки Карповки, 5, литера П.">
 						</a>
 						<a class="button button-decor block-button contacts-button" href="blank.html">Напишите нам</a>
@@ -374,9 +374,6 @@
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
 
-		<script src="js/writeUs.js"></script>
-		<script src="js/map.js"></script>
-		<script src="js/slider.js"></script>
-		<script src="js/services.js"></script>
+		<script src="js/script.min.js"></script>
   </body>
 </html>

@@ -22,7 +22,7 @@
 
 					<div class="user-menu">
 						<form class="search" action="https://echo.htmlacademy.ru" method="get">
-							<label for="search"></label>
+							<label for="search">Поле поиска</label>
 							<input class="search-field" id="search" type="search" placeholder="Поиск по сайту" required>
 							<button class="search-button" type="submit">найти</button>
 						</form>
@@ -47,14 +47,20 @@
 						<li class="site-navigation-item site-navigation-catalog">
 							<a class="link-catalog" href="#">Каталог товаров</a>
 							<div class="dropdown-menu">
-								<ul class="site-navigation-dropdown reset-list">
-									<li class="dropdown-item"><a href="blank.html">Виртуальная реальность</a></li>
-									<li class="dropdown-item"><a href="blank.html">Фитнес-браслеты</a></li>
-									<li class="dropdown-item"><a href="blank.html">Квадрокоптер</a></li>
-									<li class="dropdown-item"><a href="blank.html">Моноподы для селфи</a></li>
-									<li class="dropdown-item"><a href="blank.html">Умные часы</a></li>
-									<li class="dropdown-item"><a href="blank.html">Экшн-камеры</a></li>
-								</ul>
+								<div class="dropdown-menu-wrapper">
+									<ul class="site-navigation-dropdown dropdown-column-1 reset-list">
+										<li class="dropdown-item"><a href="blank.html">Виртуальная реальность</a></li>
+										<li class="dropdown-item"><a href="catalog.html">Моноподы для селфи</a></li>
+										<li class="dropdown-item"><a href="blank.html">Экшн-камеры</a></li>
+									</ul>
+									<ul class="site-navigation-dropdown dropdown-column-2 reset-list">
+										<li class="dropdown-item"><a href="blank.html">Фитнес-браслеты</a></li>
+										<li class="dropdown-item"><a href="blank.html">Умные часы</a></li>
+									</ul>
+									<ul class="site-navigation-dropdown dropdown-column-3 reset-list">
+										<li class="dropdown-item"><a href="blank.html">Квадрокоптер</a></li>
+									</ul>
+								</div>
 							</div>
 						</li>
 						<li class="site-navigation-item site-navigation-delivery"><a href="blank.html">Доставка</a></li>
@@ -91,48 +97,39 @@
 										<div class="bar"></div>
 									</div>
 									<div class="toggle toggle-min" tabindex="0">
-										<label class="price-controls min-price">
+										<label class="price-controls min-price" aria-label="Минимальная цена">
 											от <input type="number" name="min-price" value="0">
 										</label>
 									</div>
 									<div class="toggle toggle-max" tabindex="0">
-										<label class="price-controls max-price">
+										<label class="price-controls max-price" aria-label="Максимальная цена">
 											до <input type="number" name="min-price" value="5000">
 										</label>
 									</div>
 								</div>
-
-								<!-- <div class="price-controls">
-									<label class="min-price">
-										от <input type="number" name="min-price" value="0">
-									</label>
-									<label class="max-price">
-										до <input type="number" name="min-price" value="5000">
-									</label>
-								</div> -->
 							</div>
 						</fieldset>
 						<fieldset class="filter-color reset-fieldset">
 							<legend>Цвет</legend>
 							<ul class="reset-list">
 								<li class="filter-option filter-checkbox">
-									<input class="filter-input-checkbox filter-input" type="checkbox" name="black" id="filter-black" checked>
+									<input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="black" id="filter-black" checked>
 									<label for="filter-black">Черный</label>
 								</li>
 								<li class="filter-option filter-checkbox">
-									<input class="filter-input-checkbox filter-input" type="checkbox" name="white" id="filter-white">
+									<input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="white" id="filter-white">
 									<label for="filter-white">Белый</label>
 								</li>
 								<li class="filter-option filter-checkbox">
-									<input class="filter-input-checkbox filter-input" type="checkbox" name="blue" id="filter-blue" checked>
+									<input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="blue" id="filter-blue" checked>
 									<label for="filter-blue">Синий</label>
 								</li>
 								<li class="filter-option filter-checkbox">
-									<input class="filter-input-checkbox filter-input" type="checkbox" name="red" id="filter-red" checked>
+									<input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="red" id="filter-red" checked>
 									<label for="filter-red">Красный</label>
 								</li>
 								<li class="filter-option filter-checkbox">
-									<input class="filter-input-checkbox filter-input" type="checkbox" name="pink" id="filter-pink">
+									<input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="pink" id="filter-pink">
 									<label for="filter-pink">Розовый</label>
 								</li>
 							</ul>
@@ -141,11 +138,11 @@
 							<legend>Bluetooth</legend>
 							<ul class="reset-list">
 								<li class="filter-option filter-radio">
-									<input class="filter-input-radio filter-input" type="radio" name="bluetooth" id="bluetooth-choice1" value="yes" checked>
+									<input class="visually-hidden filter-input-radio filter-input" type="radio" name="bluetooth" id="bluetooth-choice1" value="yes" checked>
 									<label for="bluetooth-choice1">Есть</label>
 								</li>
 								<li class="filter-option filter-radio">
-									<input class="filter-input-radio filter-input" type="radio" name="bluetooth" id="bluetooth-choice2" value="no">
+									<input class="visually-hidden filter-input-radio filter-input" type="radio" name="bluetooth" id="bluetooth-choice2" value="no">
 									<label for="bluetooth-choice2">Нет</label>
 								</li>
 							</ul>
@@ -163,8 +160,8 @@
 					</ul>
 
 					<ul class="sort-buttons reset-list">
-						<li><a class="sort-button sort-button-up" href="#"></a></li>
-						<li><a class="sort-button sort-button-down" href="#"></a></li>
+						<li><a class="sort-button sort-button-up" href="#" aria-label="Сортировка по возрастанию"></a></li>
+						<li><a class="sort-button sort-button-down" href="#" aria-label="Сортировка по убыванию"></a></li>
 					</ul>
 				</section>
 
@@ -219,11 +216,13 @@
 
 					<ul class="pagination-list reset-list">
 						<li class="pagination-item pagination-item-previous pagination-item-disabled"><a>назад</a></li>
-						<ol class="pagination-list-numbers reset-list">
-							<li class="pagination-item pagination-item-number pagination-item-current"><a>1</a></li>
-							<li class="pagination-item pagination-item-number"><a href="#">2</a></li>
-							<li class="pagination-item pagination-item-number"><a href="#">3</a></li>
-						</ol>
+						<li>
+							<ol class="pagination-list-numbers reset-list">
+								<li class="pagination-item pagination-item-number pagination-item-current"><a>1</a></li>
+								<li class="pagination-item pagination-item-number"><a href="#">2</a></li>
+								<li class="pagination-item pagination-item-number"><a href="#">3</a></li>
+							</ol>
+						</li>
 						<li class="pagination-item pagination-item-next"><a href="#">вперед</a></li>
 					</ul>
 				</section>
