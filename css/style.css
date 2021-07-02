@@ -67,6 +67,9 @@
 	--special-white-with-opacity: rgba(255, 255, 255, 0.3);
 	--special-black-with-one-third-opacity: rgba(0, 0, 0, 0.3);
 	--special-black-with-two-third-opacity: rgba(0, 0, 0, 0.6);
+
+	--special-black-with-point-one-five-opacity: rgba(0, 0, 0, 0.15);
+	--special-black-with-point-one-eight-opacity: rgba(0, 0, 0, 0.18);
 }
 
 
@@ -1673,9 +1676,9 @@ img {
 	width: 960px;
 	padding: 92px 100px 69px;
 
-	-webkit-box-shadow: 0 10px 16px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 0 10px 16px var(--special-black-with-point-one-five-opacity);
 
-	box-shadow: 0 10px 16px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 10px 16px var(--special-black-with-point-one-five-opacity);
 }
 
 .modal-write-us form {
@@ -2142,8 +2145,8 @@ img {
 	height: 20px;
 	padding: 0;
 	border-radius: 50%;
-	-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.18);
-	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.18);
+	-webkit-box-shadow: 0 2px 2px var(--special-black-with-point-one-eight-opacity);
+	box-shadow: 0 2px 2px var(--special-black-with-point-one-eight-opacity);
 	border: 8px solid var(--basic-white);
 	background-color: var(--basic-gray77);
 	cursor: pointer;
