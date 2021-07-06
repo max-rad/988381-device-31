@@ -8,7 +8,7 @@ const writeUsName = writeUsPopup.querySelector(".write-us-name");
 const writeUsEmail = writeUsPopup.querySelector(".write-us-email");
 const writeUsTextArea = writeUsPopup.querySelector(".write-us-textarea");
 
-/*let isStorageSupport = true;*/
+let isStorageSupport = true;
 let storageName = "";
 let storageEmail = "";
 
